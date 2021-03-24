@@ -34,26 +34,26 @@ function balancingParentheses(string) {
 //     return Math.abs(leftBracket - rightBracket) + baseCount;
 // }
 
-function balancingParentheses(string) {
-    let baseCount = 0;
-    let leftBracket = 0;
-    let rightBracket = 0;
+// function balancingParentheses(string) {
+//     let baseCount = 0;
+//     let leftBracket = 0;
+//     let rightBracket = 0;
 
-    for (let i = 0; i < string.length; i++) {
-        if (
-            (i === 0 && string.charAt(0) === ")") ||
-            (i === string.length - 1 && string.charAt(string.length - 1) === "(")
-        ) {
-            baseCount++;
-        } else if (string.charAt(i) === ")") {
-            leftBracket++;
-        } else if (string.charAt(i) === "(") {
-            rightBracket++;
-        }
-    }
+//     for (let i = 0; i < string.length; i++) {
+//         if (
+//             (i === 0 && string.charAt(0) === ")") ||
+//             (i === string.length - 1 && string.charAt(string.length - 1) === "(")
+//         ) {
+//             baseCount++;
+//         } else if (string.charAt(i) === ")") {
+//             leftBracket++;
+//         } else if (string.charAt(i) === "(") {
+//             rightBracket++;
+//         }
+//     }
 
-    return Math.abs(leftBracket - rightBracket) + baseCount;
-}
+//     return Math.abs(leftBracket - rightBracket) + baseCount;
+// }
 
 if (require.main === module) {
     // add your own tests in here
